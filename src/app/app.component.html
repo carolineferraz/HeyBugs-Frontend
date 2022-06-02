@@ -1,11 +1,11 @@
-<router-outlet></router-outlet>
+<app-menu *ngIf="auth.logado()"></app-menu>
 
+<router-outlet></router-outlet>
 <!-- O router-outlet serve para deixar as rotas dinâmicas -->
 
-<!-- <app-menu></app-menu> -->
+<app-rodape *ngIf="auth.logado()"></app-rodape> 
 
 <!-- <app-entrar></app-entrar> -->
 
 <!-- <app-cadastrar></app-cadastrar> -->
 
-<!-- <app-rodape></app-rodape>  -->
