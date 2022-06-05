@@ -1,43 +1,42 @@
 <div class="container-fluid">
 
-    <div class="row bg-dark d-flex align-items-center">
+    <div class="row d-flex align-items-center bg-info">
         <div class="col-md-6 mr-0">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-6 text-white">
-                    <h1 class="fs-54">Hey, Bugs!</h1>
-                    <h5 class="fs-15">Seu espaço para trocar ideias sobre filmes, música e tecnologia, em um só lugar 🤙👽</h5>
+                <div class="col-md-6 text-secondary">
+                    <h1 class="fs-54 text-dark">Hey, Bugs! <i class="fa fa-bug" aria-hidden="true" ></i></h1>
+                    <h5 class="fs-15 text-dark">Seu espaço para trocar ideias sobre filmes, música e tecnologia, em um só lugar.</h5><h5 class="fs-15 text-dark"> E aí, vamo trocar uma ideia?  </h5>
                 </div>
             </div>
 
             <div class="row d-flex justify-content-center mt-3 mb-5">
                 <div class="col-md-6">
-                    <button class="btn btn-light mr-2" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
-                    <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+                    <button class="btn btn-dark mr-2" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
+                    <a class="btn btn-outline-dark" href="#postagens">Ver Postagens</a>
                 </div>
-
             </div>
-
         </div>
-        <div class="col-md-6 d-flex justify-content-center ml-0 padding-left-0">
-            <img src="https://i.imgur.com/ZUcSqU6.png" alt="Desenho foto do Alien" width="450px" height="450px">
+
+        <div class="col-md-6 d-flex justify-content-center padding-left-0">
+            <img src="https://i.imgur.com/660vGAR.png" alt="Desenho foto do Alien" height="450px" >
         </div>
     </div>
 
 </div>
 
-<div class="container" id="postagens">
+<div class="container m-0 mr-0" id="postagens" >
     <nav>
         <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
           
-            <a class="nav-item nav-link active text-secundary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
+            <a class="nav-item nav-link active font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
           
-            <a class="nav-item nav-link text-secundary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
+            <a class="nav-item nav-link font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
           
-            <a class="nav-item nav-link text-secundary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab" href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por Tema</a>
+            <a class="nav-item nav-link font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab" href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por Tema</a>
         
         </div>
       </nav>
-      <div class="tab-content" id="nav-tabContent">
+      <div class="tab-content text-dark" id="nav-tabContent">
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">Todas as postagens</div>
         <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">Minhas postagens</div>
         <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">Postagens por tema</div>

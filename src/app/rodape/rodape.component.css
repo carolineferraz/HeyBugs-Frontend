@@ -10,11 +10,11 @@ ul.social-network li {
 }
 
 .fa {
-    font-size: 35pt;
-    color: white;
+    font-size: 20pt;
+    color: #6c757d;
     padding: 5px;
 }
 
 .fa:hover {
-    color: #0275d8;
+    color: #17a2b8;
 }

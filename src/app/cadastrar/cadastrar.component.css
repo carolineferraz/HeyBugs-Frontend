@@ -1,5 +1,14 @@
-#img-bg {
-    background-image: url(https://i.imgur.com/0mFSlbG.jpeg);
+#img-bg-1 {
+    background-image: url(https://i.imgur.com/PlNswlg.jpeg);
+    min-height: 695px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img-bg-2 {
+    background-image: url(https://i.imgur.com/drlKDYX.jpeg);
     min-height: 695px;
 
     background-position: center;
