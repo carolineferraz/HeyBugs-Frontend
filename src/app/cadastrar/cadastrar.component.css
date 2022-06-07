@@ -15,3 +15,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+input::placeholder {
+    color: #2596be;
+}
+
+input, select {
+    border-width: 2px;
+}
+
+h1, label {
+    font-weight: 600;
+}
