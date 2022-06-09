@@ -38,7 +38,8 @@ export class InicioComponent implements OnInit {
       alert('Sua sessão expirou! Faça login novamente.')
       this.router.navigate(['/entrar'])
     }
-
+    
+    this.authService.refreshToken()
     this.getAllTemas()
     this.getAllPostagens()
 

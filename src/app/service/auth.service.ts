@@ -1,5 +1,5 @@
 import { UsuarioLogin } from './../Model/UsuarioLogin'
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Usuario } from '../Model/Usuario';
@@ -14,6 +14,16 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
+  token = {
+    headers: new HttpHeaders().set('Authorization', environment.token)
+  }
+
+  refreshToken() {
+    this.token = {
+      headers: new HttpHeaders().set('Authorization', environment.token)
+    }
+  }  
+
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
     return this.http.post<UsuarioLogin>('https://blogpessoalcrrz.herokuapp.com/usuarios/logar', usuarioLogin)
   }
@@ -23,7 +33,7 @@ export class AuthService {
   }
 
   getByIdUsuario(id: number): Observable<Usuario> {
-    return this.http.get<Usuario>(`https://blogpessoalcrrz.herokuapp.com/usuarios/${id}`) // verificar se precisa do token
+    return this.http.get<Usuario>(`https://blogpessoalcrrz.herokuapp.com/usuarios/${id}`, this.token) // verificar se precisa do token
   }
 
   logado() {
