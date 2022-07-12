@@ -1,16 +1,6 @@
-#img-bg-1 {
-    background-image: url(https://i.imgur.com/BC39CyE.jpeg);
+.container-fluid {
+    background-image: url("../../assets/bg-westworld.jpg");
     min-height: 695px;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#img-bg-2 {
-    background-image: url(https://i.imgur.com/Jtz1BfM.jpeg);
-    min-height: 695px;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
