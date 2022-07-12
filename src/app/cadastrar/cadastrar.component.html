@@ -10,31 +10,31 @@
             <div class="row d-flex justify-content-center" >
                 <div class="col-md-10">
 
-                    <h1 class="text-center mt-3 text-primary">Cadastro <i class="fa fa-bug" aria-hidden="true" ></i></h1>
+                    <h1 class="text-center mt-3 text-info">Cadastro <i class="fa fa-bug" aria-hidden="true" ></i></h1>
 
-                    <div class="form-group text-primary">
+                    <div class="form-group text-info">
                         <label for="nome">Nome:</label>
-                        <input [(ngModel)]="usuario.nome" class="form-control border-primary text-primary" type="text" name="nome" id="nome" placeholder="Seu nome">
+                        <input [(ngModel)]="usuario.nome" class="form-control border-info text-info" type="text" name="nome" id="nome" placeholder="Digite o nome como gosta de ser chamado">
                     </div>
-                    <div class="form-group text-primary">
-                        <label for="usuario">Usuário:</label>
-                        <input [(ngModel)]="usuario.usuario" class="form-control border-primary text-primary" type="text" name="usuario" id="usuario" placeholder="Seu usuário">
+                    <div class="form-group text-info">
+                        <label for="usuario">Email:</label>
+                        <input [(ngModel)]="usuario.usuario" class="form-control border-info text-info" type="text" name="usuario" id="usuario" placeholder="Digite um e-mail válido">
                     </div>
-                    <div class="form-group text-primary">
+                    <div class="form-group text-info">
                         <label for="foto">Link da foto:</label>
-                        <input [(ngModel)]="usuario.foto" class="form-control border-primary text-primary" type="text" name="foto" id="foto" placeholder="Link da sua foto">
+                        <input [(ngModel)]="usuario.foto" class="form-control border-info text-info" type="text" name="foto" id="foto" placeholder="Cole aqui o link da sua foto de perfil">
                     </div>
-                    <div class="form-group text-primary">
+                    <div class="form-group text-info">
                         <label for="senha">Senha:</label>
-                        <input (input)="confirmaSenha($event)" class="form-control border-primary text-primary" type="password" name="senha" id="senha" placeholder="Sua senha">
+                        <input (input)="confirmaSenha($event)" class="form-control border-info text-info" type="password" name="senha" id="senha" placeholder="Senha de no mínimo 8 caracteres">
                     </div>
-                    <div class="form-group text-primary">
+                    <div class="form-group text-info">
                         <label for="confirmaSenha">Confirmar senha:</label>
-                        <input [(ngModel)]="usuario.senha" class="form-control border-primary text-primary" type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Confirme sua senha">
+                        <input [(ngModel)]="usuario.senha" class="form-control border-info text-info" type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Repita sua senha">
                     </div>
-                    <div class="form-group text-primary">
+                    <div class="form-group text-info">
                         <label for="tipo">Tipo de usuário:</label>
-                        <select class="form-control border-primary text-primary" name="tipo" id="tipo" (change)="tipoUsuario($event)">
+                        <select class="form-control border-info text-info" name="tipo" id="tipo" (change)="tipoUsuario($event)">
                             <option>Selecione um tipo de usuário</option>
                             <option value="normal">Normal</option>
                             <option value="adm">Administrador</option>
@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-primary mr-4" (click)="cadastrar()">Cadastrar</button>
+                        <button type="submit" class="btn btn-info mr-4" (click)="cadastrar()">Cadastrar</button>
                         <button type="submit" class="btn btn-dark" routerLink="/entrar">Cancelar</button>
                     </div>
 
