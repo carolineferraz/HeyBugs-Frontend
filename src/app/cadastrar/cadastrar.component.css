@@ -1,7 +1,7 @@
 .container-fluid {
     background-image: url("../../assets/bg-kraftwerk.jpg");
     min-height: 695px;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -16,4 +16,10 @@ input, select {
 
 h1, label {
     font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .coluna1 {
+        width: 0;
+    }
 }
