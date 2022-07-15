@@ -39,7 +39,7 @@ export class TemaComponent implements OnInit {
   cadastrar() {
     this.temaService.postTema(this.tema).subscribe((resp: Tema) => {
       this.tema = resp
-      this.alertas.showAlertInfo("Tema cadastrado com sucesso.")
+      this.alertas.showAlertInfo('Tema cadastrado com sucesso')
       this.findAllTemas()
       this.tema = new Tema()
     })
