@@ -2,8 +2,8 @@
 
 
 
-<h2>Link de Acesso: </h2>
-<a href="https://heybugs.netlify.app/">heybugs.netlify.app</a>
+<h2>Link de Acesso: <h2>
+<p align="center"><a href="https://heybugs.netlify.app/">&#x1F47D; heybugs.netlify.app &#x1F47D;</a></p>
 
 
 
