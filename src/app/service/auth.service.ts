@@ -22,7 +22,7 @@ export class AuthService {
     this.token = {
       headers: new HttpHeaders().set('Authorization', environment.token)
     }
-  }  
+  }
 
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
     return this.http.post<UsuarioLogin>('https://blogpessoalcrrz.herokuapp.com/usuarios/logar', usuarioLogin)
@@ -44,7 +44,18 @@ export class AuthService {
     }
 
     return ok
-
   }
+
+
+  adm() {
+    let ok: boolean = false
+
+    if (environment.tipo == 'adm') {
+      ok = true
+    }
+
+    return ok
+  }
+
 
 }
