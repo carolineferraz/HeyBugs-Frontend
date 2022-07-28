@@ -18,10 +18,12 @@ export class InicioComponent implements OnInit {
 
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
+  tituloPost: string
 
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
+  descricaoTema: string
 
   usuario: Usuario = new Usuario()
   idUsuario = environment.id
@@ -39,13 +41,13 @@ export class InicioComponent implements OnInit {
 
   ngOnInit() {
 
-    window.scroll(0,0)
+    window.scroll(0, 0)
 
     if (environment.token == '') {
       this.alertas.showAlertInfo('Sua sessão expirou! Faça login novamente.')
       this.router.navigate(['/entrar'])
     }
-    
+
     this.authService.refreshToken()
     this.getAllTemas()
     this.getAllPostagens()
@@ -89,7 +91,29 @@ export class InicioComponent implements OnInit {
       this.postagem = new Postagem()
       this.getAllPostagens()
     })
+  }
 
+  findByTituloPostagem() {
+
+    if (this.tituloPost == '') {
+      this.getAllPostagens()
+
+    } else {
+      this.postagemService.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[]) => {
+        this.listaPostagens = resp
+      })
+
+    }
+  }
+
+  findByDescricaoTema() {
+    if (this.descricaoTema == '') {
+      this.getAllTemas()
+    } else {
+      this.temaService.getByDescricaoTema(this.descricaoTema).subscribe((resp: Tema[]) => {
+        this.listaTemas = resp
+      })
+    }
   }
 
 }
