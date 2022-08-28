@@ -2,13 +2,16 @@
 
 
 
+
 <h2>Link de Acesso: <h2>
 <p align="center"><a href="https://heybugs.netlify.app/">&#x1F47D; heybugs.netlify.app &#x1F47D;</a></p>
 
 
 
+
 <h2>Descrição:</h2>
 Projeto de Front-end da aplicação "Hey, Bugs!". Um projeto pessoal de um blog para troca de ideias sobre filmes, música e tecnologia, para incrementar o portfólio enquanto ponho em prática os conceitos que envolvem o desenvolvimento de APIs Rest. O código fonte do back-end se encontra no <a href="https://github.com/carolineferraz/HeyBugs-Backend">https://github.com/carolineferraz/HeyBugs-Backend</a>.
+
 
 
 
@@ -19,4 +22,13 @@ Projeto de Front-end da aplicação "Hey, Bugs!". Um projeto pessoal de um blog 
 <p>• Desenvolvimento da estrutura HTML com estilização em CSS;</p> 
 <p>• Desenvolvimento do TypeScript para o consumo da API de acordo com o back-end;</p> 
 <p>• Deploy da aplicação para o servidor do Netlify.</p> 
+
+
+
+
+<h2>Demonstração:</h2>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/95757534/187054570-7e2137f2-72c2-4f82-b633-adc0a0354881.gif">
+</p>
+
 
